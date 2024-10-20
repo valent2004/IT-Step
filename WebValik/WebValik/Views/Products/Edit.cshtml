@@ -1,0 +1,40 @@
+﻿@model WebValik.Models.Category.CategoryEditViewModel
+
+<h2>Редагувати категорію</h2>
+
+<form asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="mb-3">
+        <label asp-for="Name" class="form-label">Назва категорії</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Description" class="form-label">Опис</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label for="ExistingImage">Існуюче зображення</label><br />
+        @if (!string.IsNullOrEmpty(Model.ExistingImage))
+        {
+            <img src="/uploading/300_@Model.ExistingImage" class="img-thumbnail" width="200" />
+        }
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Photo" class="form-label">Завантажити нове зображення</label>
+        <input asp-for="Photo" type="file" class="form-control" />
+        <span asp-validation-for="Photo" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Зберегти</button>
+    <a asp-action="Bomba" class="btn btn-secondary">Назад</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

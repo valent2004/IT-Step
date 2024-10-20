@@ -1,0 +1,17 @@
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\WebValik.exe
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\appsettings.json
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\libman.json
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\WebValik.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\WebValik.runtimeconfig.json
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\WebValik.pdb
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Abstractions.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Microsoft.EntityFrameworkCore.Relational.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.Caching.Memory.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Microsoft.Extensions.DependencyInjection.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Npgsql.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\SixLabors.ImageSharp.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\System.Diagnostics.DiagnosticSource.dll
+G:\С#\WebValik\WebValik\obj\Release\net6.0\PubTmp\Out\WebValik.deps.json
