@@ -8,85 +8,85 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebValik
 build_property.RootNamespace = WebValik
-build_property.ProjectDir = G:\С#\WebValik\WebValik\
+build_property.ProjectDir = C:\Users\Admin\Documents\GitHub\IT-Step\WebValik\WebValik\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = G:\С#\WebValik\WebValik
+build_property.MSBuildProjectDirectory = C:\Users\Admin\Documents\GitHub\IT-Step\WebValik\WebValik
 build_property._RazorSourceGeneratorDebug = 
 
-[G:/С\#/WebValik/WebValik/Views/Home/Index.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Home/Privacy.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Main/Bomba.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Main/Bomba.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxCb21iYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Main/Create.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Main/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Main/Edit.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Main/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Main/Search.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Main/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Main/_Header.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Main/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxfSGVhZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Main/_MainLayout.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Main/_MainLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFpblxfTWFpbkxheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Products/Create.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Products/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Products/Edit.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Products/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Products/Index.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Products/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Products/Search.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Products/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Products/_Header.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Products/_Header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcX0hlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Products/_MainLayout.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Products/_MainLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcX01haW5MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Shared/Error.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/_ViewImports.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/_ViewStart.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[G:/С\#/WebValik/WebValik/Views/Shared/_Layout.cshtml]
+[C:/Users/Admin/Documents/GitHub/IT-Step/WebValik/WebValik/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-9xmr7pbgnw

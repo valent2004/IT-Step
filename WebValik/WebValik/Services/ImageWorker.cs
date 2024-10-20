@@ -79,11 +79,28 @@ public class ImageWorker : IImageWorker
 
     public void Delete(string fileName)
     {
-        foreach (int size in sizes)
+        if (string.IsNullOrEmpty(fileName))
         {
-            var fileSave = Path.Combine(_environment.WebRootPath, dirName, $"{size}_{fileName}"); // шукати назву
-            if (File.Exists(fileSave)) File.Delete(fileSave); // якщо є - видаляти фото всіх розмірів
+            return; // Ігноруємо порожні назви файлів
         }
+        // Складаємо шляхи до всіх зменшених версій
+        var filePaths = sizes.Select(size => Path.Combine(_environment.WebRootPath, dirName, $"{size}_{fileName}")).ToList();
+        // Видаляємо всі файли одночасно для покращення продуктивності
+        Parallel.ForEach(filePaths, filePath =>
+        {
+            if (File.Exists(filePath))
+            {
+                try
+                {
+                    File.Delete(filePath);
+                }
+                catch (Exception ex)
+                {
+                    // Логуємо або обробляємо помилки видалення окремих файлів
+                    Console.WriteLine($"Помилка видалення файлу '{filePath}': {ex.Message}");
+                }
+            }
+        });
     }
 
     public string Save(IFormFile file)

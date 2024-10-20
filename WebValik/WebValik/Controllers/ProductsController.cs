@@ -1,7 +1,11 @@
 ﻿using AutoMapper;
 using AutoMapper.QueryableExtensions;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.EntityFrameworkCore;
 using WebValik.Data;
+using WebValik.Data.Entities;
+using WebValik.Interfaces;
 using WebValik.Models.Product;
 
 namespace WebValik.Controllers
@@ -10,11 +14,15 @@ namespace WebValik.Controllers
     {
         private readonly AppValikDbContext _dbContext;
         private readonly IMapper _mapper;
+        private readonly IImageWorker _imageWorker;
+        private readonly IWebHostEnvironment _environment;
         //DI - Depencecy Injection
-        public ProductsController(AppValikDbContext context, IMapper mapper)
+        public ProductsController(AppValikDbContext context, IMapper mapper, IImageWorker imageWorker, IWebHostEnvironment environment)
         {
             _dbContext = context;
             _mapper = mapper;
+            _imageWorker = imageWorker;
+            _environment = environment;
         }
         public IActionResult Index()
         {
@@ -22,6 +30,89 @@ namespace WebValik.Controllers
                 .ProjectTo<ProductItemViewModel>(_mapper.ConfigurationProvider)
                 .ToList();
             return View(model);
+        }
+        [HttpPost]
+        public IActionResult Delete(int id)
+        {
+            var product = _dbContext.Products.Include(x => x.ProductImages).SingleOrDefault(x => x.Id == id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            if (product.ProductImages != null)
+            {
+                foreach (var productImage in product.ProductImages)
+                {
+                    _imageWorker.Delete(productImage.Image);
+                    _dbContext.ProductImages.Remove(productImage);
+
+                }
+            }
+            _dbContext.Products.Remove(product);
+            _dbContext.SaveChanges();
+
+            return Json(new { text = "Ми його видалили" }); // Вертаю об'єкт у відповідь
+        }
+
+        [HttpGet]
+        public IActionResult Create()
+        {
+            var categories = _dbContext.Categories
+                .Select(x => new { Value = x.Id, Text = x.Name })
+                .ToList();
+
+            ProductCreateViewModel viewModel = new()
+            {
+                CategoryList = new SelectList(categories, "Value", "Text")
+            };
+
+            return View(viewModel);
+        }
+        [HttpPost]
+        public IActionResult Create(ProductCreateViewModel model)
+        {
+            //var entity = _mapper.Map<ProductEntity>(model); // ПОМИЛКА з decimal
+
+            var entity = _mapper.Map<ProductEntity>(model);
+
+            // Збереження в Базу даних інформації   
+            var dirName = "uploading";
+            var dirSave = Path.Combine(_environment.WebRootPath, dirName);
+
+            if (!Directory.Exists(dirSave))
+            {
+                Directory.CreateDirectory(dirSave);
+            }
+
+            entity.ProductImages = new List<ProductImageEntity>(); // Ініціалізуємо колекцію
+
+            var categories = _dbContext.Categories.ToList();
+
+            if (model.Photos != null && model.Photos.Count > 0)
+            {
+                int priority = 0;
+                // Збереження фотографій
+                foreach (var photo in model.Photos)
+                {
+                    if (photo.Length > 0)
+                    {
+                        var productImageEntity = new ProductImageEntity()
+                        {
+                            Product = entity,
+                            Image = _imageWorker.Save(photo),
+                            Priotity = priority
+                        };
+                        entity.ProductImages.Add(productImageEntity); // Додаємо до колекції
+
+                        priority++;
+                    }
+                }
+            }
+            entity.Category = categories[categories.Count - 1];
+            _dbContext.Products.Add(entity);
+            _dbContext.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }

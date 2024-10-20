@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K+LEtGbJ1mjyOQITjrVbTvfqShkIrEozivG8zVzvPdST+k7megKiQiXC1RegpiB9VsqDIwUInwyu0AMPA05NlA==",
+  "dgSpecHash": "D65BQucOlkkW23nDaVJf5SWATm6sW/TErFXVnTcblLvtaoqgSC+DhhblRKmuSDSXkhANGJLb035TGXD4HRViPQ==",
   "success": true,
-  "projectFilePath": "G:\\С#\\WebValik\\WebValik\\WebValik.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\Documents\\GitHub\\IT-Step\\WebValik\\WebValik\\WebValik.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Admin\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\bogus\\35.6.1\\bogus.35.6.1.nupkg.sha512",

@@ -1,4 +1,5 @@
-﻿using AutoMapper;
+﻿using System.Globalization;
+using AutoMapper;
 using WebValik.Data.Entities;
 using WebValik.Models.Category;
 using WebValik.Models.Product;
@@ -15,6 +16,8 @@ namespace WebValik.Mapper
             CreateMap<ProductEntity, ProductItemViewModel>()
                 .ForMember(x => x.Images, opt => opt.MapFrom(p => p.ProductImages.Select(x => x.Image).ToList()))
                 .ForMember(x => x.CategoryName, opt => opt.MapFrom(c => c.Category.Name));
+            CreateMap<ProductCreateViewModel, ProductEntity>()
+                .ForMember(x => x.Price, opt => opt.MapFrom(p => Decimal.Parse(p.Price, CultureInfo.InvariantCulture)));
         }
     }
 }
